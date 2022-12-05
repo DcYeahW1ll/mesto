@@ -15,90 +15,84 @@
     <img class="header__logo" src="./images/header/header__logo.svg" alt="Логотип">
   </header>
 
-  <section class="profile">
-    <aside class="profile__container-info">
-      <div class="profile__container-avatar">
+  <main>
+    <section class="profile">
+      <div class="profile__container-info">
         <img class="profile__avatar" src="./images/profile/profile__image.jpg" alt="Аватар">
-      </div>
-      <div class="profile__bio">
-        <div class="profile__info">
-          <p class="profile__name">Жак-Ив Кусто</p>
-          <p class="profile__profession">Исследователь океана</p>
+        <div class="profile__bio">
+          <div class="profile__info">
+            <h1 class="profile__name">Жак-Ив Кусто</h1>
+            <p class="profile__profession">Исследователь океана</p>
+          </div>
+          <button class="profile__edit-button" aria-label="редакция профиля" type="menu"></button>
         </div>
-        <button class="profile__edit-button" aria-label="редакция профиля"></button>
       </div>
-    </aside>
-    <button class="profile__add-button" aria-label="добавление фотогрфий"></button>
+      <button class="profile__add-button" aria-label="добавление фотографий" type="button"></button>
   </section>
 
   <section class="elements">
-    <figure class="element">
+    <article class="element">
       <img class="element__image" src="./images/elements/karachaevsk.jpg" alt="Карачаевск">
       <div class="element__card-container">
-        <p class="element__name">Карачаевск</p>
+        <h2 class="element__name">Карачаевск</h2>
         <button class="element__like-button"></button>
       </div>
-    </figure>
-    <figure class="element">
+    </article>
+    <article class="element">
       <img class="element__image" src="./images/elements/gora_elbrus.jpg" alt="Гора_эльбрус">
       <div class="element__card-container">
-        <p class="element__name">Гора Эльбрус</p>
+        <h2 class="element__name">Гора Эльбрус</h2>
         <button class="element__like-button"></button>
       </div>
-    </figure>
-    <figure class="element">
+    </article>
+    <article class="element">
       <img class="element__image" src="./images/elements/dombai.jpg" alt="Домбай">
       <div class="element__card-container">
-        <p class="element__name">Домбай</p>
+        <h2 class="element__name">Домбай</h2>
         <button class="element__like-button"></button>
       </div>
-    </figure>
-    <figure class="element">
+    </article>
+    <article class="element">
       <img class="element__image" src="./images/elements/gora_elbrus.jpg" alt="Гора_Эльбрус">
       <div class="element__card-container">
-        <p class="element__name">Гора Эльбрус</p>
+        <h2 class="element__name">Гора Эльбрус</h2>
         <button class="element__like-button"></button>
       </div>
-    </figure>
-    <figure class="element">
+    </article>
+    <article class="element">
       <img class="element__image" src="./images/elements/dombai.jpg" alt="Домбай">
       <div class="element__card-container">
-        <p class="element__name">Домбай</p>
+        <h2 class="element__name">Домбай</h2>
         <button class="element__like-button"></button>
       </div>
-    </figure>
-    <figure class="element">
+    </article>
+    <article class="element">
       <img class="element__image" src="./images/elements/karachaevsk.jpg" alt="Карачаевск">
       <div class="element__card-container">
-        <p class="element__name">Карачаевск</p>
-        <button class="element__like-button"></button>
+        <h2 class="element__name">Карачаевск</h2>
+        <button class="element__like-button" type="button"></button>
       </div>
-    </figure>
+    </article>
   </section>
+</main>
 
-  <footer class="footer">
-    <p class="footer__copyright">&COPY; 2022 Mesto Russia</p>
-  </footer>
+<footer class="footer">
+  <p class="footer__copyright">&COPY; 2022 Mesto Russia</p>
+</footer>
 
   <div class="popup">
     <div class="popup__container">
       <button class="popup__close" type="button" title="Закрыть окно"></button>
-      <form action="post" class="popup__form">
+      <h3 class="popup__header">Редактировать профиль</h3>
+      <form action="post" class="popup__form" name="Информация о профиле">
         <fieldset class="popup__fieldset">
-          <legend class="popup__header">Редактировать профиль</legend>
-          <section class="popup__section">
-            <input class="popup__input popup__input_type_name" name="name" placeholder="Имя пользователя" minlength="2" maxlength="40"  required>
-            <span class="popup__input-error" id="name_error"></span>
-          </section>
-          <section class="popup__section">
-            <input class="popup__input popup__input_type_description" name="description" placeholder="Описание пользователя" minlength="2" maxlength="400" required>
-            <span class="popup__input-error" id="description_error"></span>
-          </section>
+          <input class="popup__input popup__input_type_name" name="name" placeholder="Имя пользователя" minlength="2" maxlength="40"  required>
+          <input class="popup__input popup__input_type_description" name="description" placeholder="Описание пользователя" minlength="2" maxlength="400" required>
           <button class="popup__button" type="submit">Сохранить</button>
         </fieldset>
       </form>
     </div>
   </div>
-  <script type="module" src="./pages/index.js"></script>
+  <script type="module" src="./scripts/index.js"></script>
 </body>
 </html>
