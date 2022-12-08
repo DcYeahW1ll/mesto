@@ -20,6 +20,6 @@
   .profile__name {
     margin: 0;
     margin-bottom: 14px;
-    width: 189px;
+    max-width: 189px;
   }
 }
