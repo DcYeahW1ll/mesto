@@ -3,8 +3,8 @@
   height: 32px;
   padding: 0;
   position: absolute;
-  top: -37px;
-  right: -37px;
+  top: -38px;
+  right: -38px;
   background-image: url(../../../images/popup/closeIconBig.svg);
   background-color: transparent;
   background-repeat: no-repeat;
@@ -31,6 +31,6 @@
     background-image: url(../../../images/popup/closeIcon.svg);
     width: 20px;
     height: 20px;
-    top: -32px;
+    top: -33px;
   }
 }
