@@ -3,3 +3,9 @@
   height: fit-content;
   align-self: center;
 }
+
+@media screen and (max-width: 320px){
+  .profile__bio {
+    padding-left: 27px;
+  }
+}

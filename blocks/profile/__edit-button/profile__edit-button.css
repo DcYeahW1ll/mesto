@@ -30,7 +30,7 @@
   .profile__edit-button {
     background-image: url(../../../images/profile/profile__pencilLittle.svg);
     padding: 0;
-    margin-left: 7px;
+    margin-left: 12px;
     margin-top: 8px;
   }
 }
