@@ -1,5 +1,5 @@
 .popup {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -8,15 +8,8 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, .5);
-  visibility: visible;
-  opacity: 1;
-  transition: visibility .330s, opacity .330s linear;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility .33s, opacity .330s linear;
   overflow: hidden;
 }
-
-/* 
-@media screen and (max-width: 470px) {
-  .popup__container {
-    max-width: 100%;
-  }
-} */

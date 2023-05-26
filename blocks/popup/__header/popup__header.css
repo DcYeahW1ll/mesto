@@ -6,6 +6,13 @@
   color: #000;
 }
 
+.popup__image-container .popup__header {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 15px;
+}
+
 @media screen and (max-width: 470px) {
   .popup__header {
     margin-bottom: 75px;
